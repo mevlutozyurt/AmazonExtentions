@@ -1,0 +1,26 @@
+{    
+    "manifest_version": 3,
+    "name": "Munazzo",
+    "description": "Munnazzo DropShipping App For Amazon Seller",
+    "version": "1.0",
+    "icons": {
+        "16": "icons/Munazzo16.png",
+        "48": "icons/Munazzo48.png",
+        "128": "icons/Munazzo128.png"
+      },
+      "page_action": {
+        "default_icon":  {
+            "16": "icons/Munazzo16.png",
+            "48": "icons/Munazzo48.png",
+            "128": "icons/Munazzo128.png"
+        }
+    },
+    "content_scripts": [
+        {
+          "matches": [
+            "https://www.google.com/*"
+          ],
+          "css": ["main.css"]          
+        }
+      ]
+  }
